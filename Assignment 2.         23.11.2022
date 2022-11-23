@@ -1,0 +1,7 @@
+# Write your code
+a=24
+b=24
+if a==b:
+    print('both are equal')
+else:
+    print('both are not equal')
