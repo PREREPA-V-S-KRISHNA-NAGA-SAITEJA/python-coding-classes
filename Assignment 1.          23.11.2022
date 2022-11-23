@@ -1,0 +1,8 @@
+
+# Write your code
+a=24
+b=35
+if a>b:
+    print(a,'is big') 
+else:
+    print(b,'is big') 
