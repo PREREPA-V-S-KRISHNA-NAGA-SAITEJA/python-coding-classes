@@ -1,0 +1,11 @@
+def check(list,element):
+    for i in list:
+         if i==element:
+             return True  
+    return False
+n=int(input())
+li=range(n)
+element= int(input()) 
+
+print("Check if",element,"is in",li)
+print(check(li,element))
