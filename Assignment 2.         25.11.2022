@@ -1,0 +1,7 @@
+li=[12,43,55,11,8,34]
+min=li[0]
+for i in li:
+    if i<min:
+       min=i
+print('minimum value=',min) 
+    
