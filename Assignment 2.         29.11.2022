@@ -1,0 +1,19 @@
+empno=int(input('ENTER EMPLOYEE NUMBER : '))
+empname=input('ENTER EMPLOYEE NAME :')
+empdesig=input('ENTER EMPLOYEE DESIGNATION : ')
+basicsalary=int(input())
+da=int(input())
+ta=int(input())
+hra=int(input())
+netsalary=basicsalary+da+ta+hra
+if netsalary>100000:
+    tax=netsalary*10/100   
+elif netsalary>50000:
+    tax=netsalary*7/100
+elif netsalary>40000:
+    tax=netsalary*4/100
+elif netsalary>20000:
+    tax=netsalary*2/100
+elif netsalary<20000:
+    tax=0
+print('TAX IS : ',tax)
