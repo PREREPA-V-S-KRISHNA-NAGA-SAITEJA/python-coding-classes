@@ -1,0 +1,47 @@
+sugar=50
+oil=100
+dal=65
+vegetables=45
+rice=60
+cphno=int(input('ENTER CUSTOMER NUMBER : '))
+cname=input('ENTER CUSTOMER NAME : ')
+cadd=input('ENTER CUSTOMER ADDRESS : ')
+sq=int(input('HOW MANY SUGAR PACKETS YOU WANT? : '))
+oq=int(input('HOW MANY OIL PACKETS YOU WANT? : '))
+dq=int(input('HOW MANY DAL PACKETS YOU WANT? : '))
+vq=int(input('HOW MANY VEGETABLE PACKETS YOU WANT? : '))
+rq=int(input('HOW MANY RICE PACKETS YOU WANT? : '))
+coupon=input('ENTER COUPON CODE IN CAPITAL LETTERS : ')
+bill=(sugar*sq)+(oil*oq)+(dal*dq)+(vegetables*vq)+(rice*rq)
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+if coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+if coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+if coupon=='CHRISTMAS' and bill>=3000:
+    dis=bill*20/100
+if coupon=='CHRISTMAS' and bill>=2000:
+    dis=bill*10/100
+if coupon=='CHRISTMAS' and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+print('TAX :',tax)
+print('BILL WITHOUT TAX : ',bill)
+print('DISCOUNT : ',dis)
+bill=bill+tax-dis
+print('CUSTOMER PHONE NUMBER : ',cphno)
+print('CUSTOMER NAME : ',cname)
+print('TAX : ',tax)
+print('BILL AMOUNT : ',bill)
