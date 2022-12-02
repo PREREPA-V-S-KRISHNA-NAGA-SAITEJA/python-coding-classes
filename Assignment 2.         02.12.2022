@@ -1,0 +1,33 @@
+               #way 1
+
+def vote(age):
+    if age>=18:
+        print ('YES')
+    else:
+        print('NO ')
+age=int(input())
+vote(age)
+
+                #way 2
+
+def vote(age):
+    if age>=18:
+        return "YES"
+    else:
+        return "NO"
+age=int(input())
+print(vote(age))
+
+                #way 3
+
+def vote(age):
+    if age>=18:
+        return True 
+    else:
+        return False
+age=int(input())
+if (vote(age)):
+    print('YES ')
+else:
+    print('NO ')
+    
