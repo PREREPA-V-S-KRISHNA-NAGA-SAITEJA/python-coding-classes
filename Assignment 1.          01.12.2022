@@ -1,0 +1,27 @@
+                 #way 1
+
+def bignumber():
+    c=a+b
+    print(c)
+a=int(input())
+b=int(input())
+bignumber()
+
+                #way 2
+
+def bignumber():
+    c=a+b
+    return c
+a=int(input())
+b=int(input())
+print(bignumber())
+
+                #way 3
+
+def bignumber():
+    c=a+b
+    return True
+a=int(input())
+b=int(input())
+if (bignumber()):
+    print(c)
