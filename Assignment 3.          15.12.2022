@@ -1,0 +1,13 @@
+n=int(input())
+a=list(map(int,input().split()))
+k=int(input())
+check=0
+for i in range(n):
+    for j in range(i+1,n):
+        if a[i]-a[j]==k:
+            check=check+1
+            break
+if check==1:
+    print('YES')
+else:
+    print('NO')
