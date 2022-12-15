@@ -1,0 +1,12 @@
+n=int(input())
+ol=list(map(int,input().split()))
+evenl=[]
+oddl=[]
+for i in range(n):
+    if ol[i]%2==0:
+        evenl.append(ol[i])
+    else:
+        oddl.append(ol[i])
+l=evenl+oddl
+for i in l:
+    print(i,end=' ')
