@@ -1,0 +1,20 @@
+r=int(input())
+sum1=0
+sum2=0
+m=[]
+for i in range(r):
+    l=[]
+    for j in range(r):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in m:
+    print(i)
+for i in range(r):
+    for j in range(r):
+        if i==j:
+            sum1=sum1+m[i][j]
+        if i+j==r-1:
+            sum2=sum2+m[i][j]
+print(sum1-sum2)
+           
