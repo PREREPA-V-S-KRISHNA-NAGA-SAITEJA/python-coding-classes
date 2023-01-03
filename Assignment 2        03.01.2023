@@ -1,0 +1,17 @@
+r=int(input())
+
+matrix=[]
+
+for i in range(r):
+    l=[]
+    for j in range(r):
+        x=int(input())
+        l.append(x)
+    matrix.append(l)
+for i in matrix:
+    print(i)
+for i in range(r):
+    for j in range(r):
+        
+        if i==j:
+            print(matrix[i][j])
