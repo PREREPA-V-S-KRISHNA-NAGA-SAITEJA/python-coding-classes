@@ -1,0 +1,22 @@
+r=int(input())
+m=[]
+l1=[]
+l2=[]
+for i in range(r):
+    l=[]
+    for j in range(r):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(r):
+    for j in range(r):
+        if i==j:
+            l1.append(m[i][j])
+        if i+j==r-1:
+            l2.append(m[i][j])
+a=max(l1)
+b=max(l2)
+if a>b:
+    print(a)
+else:
+    print(b)
