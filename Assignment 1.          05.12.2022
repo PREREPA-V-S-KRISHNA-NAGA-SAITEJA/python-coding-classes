@@ -1,0 +1,21 @@
+r=int(input())
+m=[]
+for i in range(r):
+    l=[]
+    for j in range(r):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(r):
+    s=0
+    for j in range(r):
+        s=s+m[i][j]
+k=int(input())
+for i in range(r):
+    for j in range(r):
+        if i+j==r-1:
+            m[i][j]=k
+        else:
+            m[i][j]=0
+for i in m:
+    print(i)
