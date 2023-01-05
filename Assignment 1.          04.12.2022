@@ -1,0 +1,21 @@
+matrix=[]
+n=int(input("Enter no. of rows:"))
+m=int(input("Enter no.of columns:"))
+for i in range(0,n):
+    l=[]
+    for j in range(0,m):
+        x=int(input("e.a.n"))
+        l.append(x)
+    matrix.append(l)
+print("The resultant matrix is:")
+for i in matrix:
+     print(i)
+Lsum=0
+Dsum=0
+for i in range(n):
+    for j in range(m):
+        if i==j:
+            Lsum=Lsum+matrix[i][j]
+        elif (i+j)==(n-1):
+            Dsum=Dsum+matrix[i][j]
+print(Lsum+Dsum)
