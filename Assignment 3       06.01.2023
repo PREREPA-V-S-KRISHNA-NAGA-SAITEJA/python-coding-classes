@@ -1,0 +1,11 @@
+e=input()
+p=input()
+f=int(p[0])
+c=0
+for i in p:
+    if i.isdigit():
+        c=c+1
+if c==10 and f>5 and e.endswith('@gmail.com'):
+    print('REGISTRATION SUCCESSFUL ')
+else:
+    print('CHECK YOUR DETAILS ')
