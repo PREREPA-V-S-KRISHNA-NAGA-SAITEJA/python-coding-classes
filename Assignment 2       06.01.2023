@@ -1,0 +1,7 @@
+e=input()
+if e.endswith('@gmail.com'):
+    print('YOU ARE USING GOOGLE ACCOUNT')
+elif e.endswith('@yahoo.com'):
+    print('YOU ARE USING YAHOO ACCOUNT')
+elif e.endswith('@adc.aditya.ac.in'):
+    print('YOU ARE USING ADITYA EDUCATIONAL INSTITUTE ACCOUNT')
